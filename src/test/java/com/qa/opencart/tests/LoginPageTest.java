@@ -61,7 +61,7 @@ public class LoginPageTest extends BaseTest {
 		
 	}
 	
-	@Severity(SeverityLevel.TRIVIAL)
+	@Severity(SeverityLevel.CRITICAL)
 	@Test
 	public void verifyRightColumn() {
 		List<String>rightColumnOptions=loginPage.verifyRightColumn();
