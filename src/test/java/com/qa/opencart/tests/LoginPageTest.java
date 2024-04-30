@@ -32,7 +32,7 @@ public class LoginPageTest extends BaseTest {
 				(AppConstants.LOGIN_PAGE_URL_FRACTION_VALUE));
 	}
 	
-	@Severity(SeverityLevel.CRITICAL)
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 3)
 	public void forgotPwdLinkExist() {
 		Assert.assertTrue(loginPage.isForgotPasswordExist());
