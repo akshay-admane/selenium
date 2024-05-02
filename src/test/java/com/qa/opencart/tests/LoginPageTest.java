@@ -45,7 +45,7 @@ public class LoginPageTest extends BaseTest {
 	}
 	
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void loginTest() {
 		accountsPage= loginPage.doLogin
 				(prop.getProperty("username"), prop.getProperty("password"));
@@ -53,7 +53,7 @@ public class LoginPageTest extends BaseTest {
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void invalidCredsLoginTest() {
 		loginPage.loginInvalidCredentials
 		(prop.getProperty("invalidUsername"), prop.getProperty("invalidPassword"));
