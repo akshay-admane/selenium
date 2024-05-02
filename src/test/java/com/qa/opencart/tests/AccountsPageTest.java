@@ -58,9 +58,9 @@ public class AccountsPageTest extends BaseTest {
 	@Test
 	public void accountsPageOptionsValueTest() {
 		List<String> actualHeaders= accountsPage.getaccPageHeadersList();
-		System.out.println("Exoected Headers are "+AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADER_LIST);
+		System.out.println("Expected Headers are "+AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADER_LIST);
 		System.out.println("Actual Headers are "+actualHeaders);
-		Assert.assertEquals(actualHeaders, AppConstants.EXPECTED_ACCOUNTS_PAGE_OPTIONS_LIST);
+		Assert.assertEquals(actualHeaders, AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADER_LIST);
 	}
 	
 	@DataProvider
