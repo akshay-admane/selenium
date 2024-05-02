@@ -71,7 +71,7 @@ public class LoginPage {
 	
 	@Step("....logging in with invalid credentials as email= {0} and password= {1}")
 	public boolean loginInvalidCredentials(String username, String pwd) {
-		System.out.println("App credentials are "+username+ ":"+pwd);
+		System.out.println("Invalid credentials as-  "+username+ ":"+pwd);
 		eleUtil.waitForElementPresence(emailID, AppConstants.DEFAULT_SHORT_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
