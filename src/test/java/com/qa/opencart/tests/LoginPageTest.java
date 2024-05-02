@@ -53,16 +53,16 @@ public class LoginPageTest extends BaseTest {
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority = 5)
+	@Test(priority = 7)
 	public void invalidCredsLoginTest() {
-		loginPage.doLogin
+		loginPage.loginInvalidCredentials
 		(prop.getProperty("invalidUsername"), prop.getProperty("invalidPassword"));
 		Assert.assertTrue(loginPage.isErrorMessageDisplayed());
 		
 	}
 	
 	@Severity(SeverityLevel.CRITICAL)
-	@Test
+	@Test(priority = 5)
 	public void verifyRightColumn() {
 		List<String>rightColumnOptions=loginPage.verifyRightColumn();
 		System.out.println(rightColumnOptions);
