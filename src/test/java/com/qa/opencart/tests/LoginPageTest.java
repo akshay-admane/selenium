@@ -65,7 +65,7 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 5)
 	public void verifyRightColumn() {
 		List<String>rightColumnOptions=loginPage.verifyRightColumn();
-		System.out.println(rightColumnOptions);
+		System.out.println("The available options in right column are as: "+rightColumnOptions);
 		softAssert.assertEquals(rightColumnOptions.size(), AppConstants.LOGIN_PAGE_RIGHT_COLUMN_OPTIONS_SIZE);
 		softAssert.assertEquals(rightColumnOptions, AppConstants.EXPECTED_LOGIN_PAGE_RIGHT_COLUMN_OPTIONS_LIST);
 	}
