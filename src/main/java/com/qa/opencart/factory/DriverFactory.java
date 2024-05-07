@@ -81,7 +81,7 @@ public class DriverFactory {
 		prop= new Properties();
 		FileInputStream ip=null;
 		String envName= System.getProperty("env");
-		System.out.println("=======Running test cases on env "+envName);
+		System.out.println("=======Running test cases on env "+envName+ "=========");
 		try {
 		   if(envName==null) {
 			   System.out.println("........no env is passed........runnning tests on qa env........");
